@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background: url(../img/star-wars.jpg) no-repeat;
+    background-size: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.logo__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.heroes {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.heroes__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.hero__item {
+    display: block;
+    width: 200px;
+    background-color: goldenrod;
+    border-radius: 3px;
+    padding: 10px 0 10px 15px;
+    margin-right: 15px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: ivory;
+}
+.hero__item:hover {
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.heroes__item--popup {
+    width:100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    overflow:hidden;
+    position:fixed;
+    top:0;
+}
+
+.heroes__item--popup  .heroes__item--popup-content {
+    margin: auto;
+    margin-top: 300px;
+    background-color: goldenrod;
+    width: 500px;
+    display: flex;
+    border-radius: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.heroes__main-information {
+    padding-left: 30px;
+}
+
+.heroes__main-information--name,
+.heroes__films--title{
+    font-weight: bold;
+    font-size: 25px;
+    color: linen;
+    font-style: italic;
+}
+
+.heroes__main-information--list,
+.heroes__films--list {
+    padding-top: 10px;
+}
+
+.heroes__main-information--item,
+.heroes__films--item {
+    padding-top: 10px;
+    font-size: 15px;
+    color: rgb(42, 22, 7);
+}
+
+.heroes__main-information--item:first-child,
+.heroes__films--item:first-child {
+    padding-top: 0;
+}
+
+.heroes__films {
+    padding-left: 100px;
+}
+
+.close {
+    position: absolute;
+    right: 480px;
+    opacity: 0.3;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 25px;
+    width: 2px;
+    background-color: #fff;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
+
+.pagination {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.pagination__list {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__item {
+    display: block;
+    padding: 10px;
+    background-color: floralwhite;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.pagination__item:hover {
+    cursor: pointer;
+    color: red;
+    border: 1px solid red;
+}
